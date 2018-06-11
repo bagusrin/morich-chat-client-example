@@ -233,7 +233,7 @@
                     <div class="row">
                         <div class="col-md-9 ">
                             <div class="chat-discussion">
-
+				<!--
                                 <div class="chat-message left">
                                     <img class="message-avatar" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
                                     <div class="message">
@@ -286,8 +286,9 @@
                                             </span>
                                     </div>
                                 </div>
-
+                            -->    
                             </div>
+			
 
                         </div>
                         <div class="col-md-3">
@@ -328,7 +329,7 @@
 
 <script>
 var em = $("#getEmail").val();
- var socket = io.connect('https://bridge.morichworldwide.com', { query: 'userId='+em });
+ var socket = io.connect('http://localhost:7003', { query: 'userId='+em });
 
  socket.on('error', function(err) {
   console.log(err);
