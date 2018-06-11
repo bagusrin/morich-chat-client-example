@@ -329,7 +329,7 @@
 
 <script>
 var em = $("#getEmail").val();
- var socket = io.connect('http://localhost:7003', { query: 'userId='+em });
+var socket = io.connect('https://bridge.morichworldwide.com', { query: 'userId='+em });
 
  socket.on('error', function(err) {
   console.log(err);
